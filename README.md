@@ -1,7 +1,7 @@
 # WEBT | CORE | Composer for PHP Projects
 
 ## Overview
-The PAA (Pet Appreciation Association) has contacted your company in order to create a website which helps pet owners to generate a sustainable and cheap emergency coil.  The Pet Emergency Coil lets you directly phone the owner by scanning a QR Code. Your website is to create these QR Codes from given phone numbers.
+The PAA (Pet Appreciation Association) has contacted your company in order to create a website which helps pet owners to generate a sustainable and cheap emergency coil.  The Pet Emergency Coil lets you directly phone the owner by scanning a QR Code. Your website is supposed to create these QR Codes from given phone numbers.
 
 ## User Story 1
 *As a Developer I want to set up composer, so that I have a package manager available for professional development.*
@@ -35,12 +35,12 @@ The PAA (Pet Appreciation Association) has contacted your company in order to cr
 - The correct readability of the QR Code has been tested with a smartphone
 
 ## User Story 5
-*As a Developer I want to create a styled webpage with a form in which users can input their phonenumber and submit it, so that I can later link it to the QR code generation.*
+*As a Developer I want to create a styled webpage with a form in which users can input their phonenumber and submit it, so that I can link it to the QR code generation.*
 
 ### Acceptance Criteria
 - A responsive website with basic styling exists
 - A form exists where user can input their phone number
-- After submitting the form the phone number gets displayed on the page
+- After submitting the form the qr code for the phone number gets displayed on the page
 
 #### Links
 https://my.skilldisplay.eu/en/skillset/81
