@@ -39,7 +39,7 @@ The PAA (Pet Appreciation Association) has contacted your company in order to cr
 
 ### Acceptance Criteria
 - A responsive website with basic styling exists
-- A form exists where user can input their phone number
+- A form exists where users can input their phone number
 - After submitting the form the qr code for the phone number gets displayed on the page
 
 #### Links
