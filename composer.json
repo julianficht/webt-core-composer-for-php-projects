@@ -1,0 +1,17 @@
+{
+    "name": "julianfichtinger/webt-core-composer-for-php-projects",
+    "autoload": {
+        "psr-4": {
+            "Julianfichtinger\\WebtCoreComposerForPhpProjects\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "julianficht",
+            "email": "1126@htl.rennweg.at"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^6.0"
+    }
+}
