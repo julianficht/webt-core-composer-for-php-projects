@@ -4,7 +4,7 @@ require '../vendor/autoload.php';
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
 
-$qrCodeBase64 = '';
+$qrCode = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phoneNumber = trim($_POST['phone']);
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $writer = new PngWriter();
         $result = $writer->write($qr);
 
-        $qrCodeBase64 = 'data:' . $result->getMimeType() . ';base64,' . base64_encode($result->getString());
+        $qrCode = 'data:' . $result->getMimeType() . ';base64,' . base64_encode($result->getString());
     } catch (\Exception $e) {
         $error = "Fehler beim Generieren des QR-Codes: " . $e->getMessage();
     }
@@ -39,9 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">QR-Code generieren</button>
     </form>
 
-    <?php if (!empty($qrCodeBase64)): ?>
+    <?php if (!empty($qrCode)): ?>
         <h3>QR-Code:</h3>
-        <img src="<?= $qrCodeBase64 ?>" alt="QR Code">
+        <img src="<?= $qrCode ?>" alt="QR Code">
     <?php endif; ?>
 </div>
 
